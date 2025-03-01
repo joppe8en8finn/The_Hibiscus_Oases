@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hibiscus Oasis</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<!-- Section 1: Title Bar -->
+<div class="title-bar">
+<h1>Hibiscus Oasis</h1>
+</div>
+<!-- Section 2: Hibiscus Field Image -->
+<section class="hibiscus-field">
+<img src="images/hibiscus-field.jpg" alt="Hibiscus Field">
+</section>
+<!-- Section 3: Product Grid (Swipeable) -->
+<section class="products">
+<div class="product-container">
+<div class="product" onclick="openModal(1)"><img src="images/seed1.jpg" alt="Seed 1"></div>
+<div class="product" onclick="openModal(2)"><img src="images/seed2.jpg" alt="Seed 2"></div>
+<div class="product" onclick="openModal(3)"><img src="images/seed3.jpg" alt="Seed 3"></div>
+<div class="product" onclick="openModal(4)"><img src="images/seed4.jpg" alt="Seed 4"></div>
+<div class="product" onclick="openModal(5)"><img src="images/seed5.jpg" alt="Seed 5"></div>
+<div class="product" onclick="openModal(6)"><img src="images/seed6.jpg" alt="Seed 6"></div>
+</div>
+</section>
+<!-- Section 4: Hibiscus Colors -->
+<section class="hibiscus-colors">
+<img src="images/hibiscus1.jpg" alt="Red Hibiscus">
+<img src="images/hibiscus2.jpg" alt="Yellow Hibiscus">
+<img src="images/hibiscus3.jpg" alt="Pink Hibiscus">
+<img src="images/hibiscus4.jpg" alt="White Hibiscus">
+</section>
+<!-- Section 5: About the Company -->
+<section class="about">
+<h2>About Us</h2>
+<p>Hibiscus Oasis specializes in high-quality hibiscus seeds and plants.</p>
+</section>
+<!-- Section 6: Contact Info -->
+<section class="contact">
+<h2>Contact Us</h2>
+<p>Email: contact@hibiscusoasis.com</p>
+<p>Phone: (123) 456-7890</p>
+<p>Address: 123 Hibiscus Street, Flower City</p>
+</section>
+<!-- Product Modal (Hidden Initially) -->
+<div id="productModal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">&times;</span>
+<img id="modalImage" src="" alt="Product">
+<h3 id="modalTitle"></h3>
+<p id="modalDescription"></p>
+<button class="buy-button">Buy Now</button>
+</div>
+</div>
+</body>
+</html>

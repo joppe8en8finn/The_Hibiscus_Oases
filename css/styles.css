@@ -1,0 +1,104 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* === SECTION 1: HEADER === */
+header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* === SECTION 2: HERO IMAGE === */
+.hero {
+    width: 100%;
+    height: 400px;
+    background: url('./images/hibiscus-field.jpg') no-repeat center center/cover;
+}
+
+/* === SECTION 3: PRODUCT SLIDER === */
+.product-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.product {
+    background-color: white;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Buttons for scrolling */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+/* === SECTION 4: HIBISCUS VARIETIES === */
+.varieties {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.variety {
+    width: 22%;
+    text-align: center;
+}
+
+.variety img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* === SECTION 5: ABOUT US === */
+.about {
+    background-color: #e2e2e2;
+    padding: 20px;
+    text-align: center;
+}
+
+/* === SECTION 6: CONTACT === */
+.contact {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
